@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/NERTU_Demo/static/css/main.453d5e3d.css",
+    "main.js": "/NERTU_Demo/static/js/main.99771472.js",
+    "static/media/pic1.jpg": "/NERTU_Demo/static/media/pic1.d6ea6c1f40d5379956e5.jpg",
+    "static/media/NERTU_COURSES2.jpg": "/NERTU_Demo/static/media/NERTU_COURSES2.2961673023bd0e1b98dc.jpg",
+    "static/media/NERTU_COURSE_Nav17.jpg": "/NERTU_Demo/static/media/NERTU_COURSE_Nav17.fdf281b41210cabfef3d.jpg",
+    "static/media/NERTU_COURSES_GNSS19_School.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_GNSS19_School.b25fb2c90cc6c1c2af5d.jpg",
+    "static/media/NERTU_OURSES_RSP16.jpg": "/NERTU_Demo/static/media/NERTU_OURSES_RSP16.9769218d32898619155a.jpg",
+    "static/media/NERTU_COURSES_GNSS17_School.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_GNSS17_School.906b75fdc5ae86dd57cd.jpg",
+    "static/media/NERTU_COURSES_GNSS14.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_GNSS14.42eb56fabf49a7763ed5.jpg",
+    "static/media/NERTU_COURSES_ASR14.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_ASR14.68fb0407f3b156985121.jpg",
+    "static/media/NERTU_COURSES_GNSS19_Course.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_GNSS19_Course.5e4d2241936e7c6a9caa.jpg",
+    "static/media/NERTU_COURSES_GNSS17_Course.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_GNSS17_Course.6c995680672b116b3e58.jpg",
+    "static/media/NERTU_COURSES_ASR19.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_ASR19.b316c515c6447f1d566d.jpg",
+    "static/media/NERTU_COURSES_ASR15_IP15.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_ASR15_IP15.9f520688c057a3203376.jpg",
+    "static/media/NERTU_COURSES3.jpg": "/NERTU_Demo/static/media/NERTU_COURSES3.abee5a638be4eac4ebab.jpg",
+    "static/media/NERTU_COURSES_GNSS18_School.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_GNSS18_School.ddeac79d2e715b86caf9.jpg",
+    "static/media/NERTU_COURSE_ASR12.jpg": "/NERTU_Demo/static/media/NERTU_COURSE_ASR12.824a65057dd813e9469b.jpg",
+    "static/media/NERTU_COURSE_GNSS18_Course.jpg": "/NERTU_Demo/static/media/NERTU_COURSE_GNSS18_Course.3b3ab6782e3890f76954.jpg",
+    "static/media/NERTU_COURSES1.jpg": "/NERTU_Demo/static/media/NERTU_COURSES1.ebe21e1804b7a32e66f2.jpg",
+    "static/media/NERTU_COURSES_DSPC19.jpg": "/NERTU_Demo/static/media/NERTU_COURSES_DSPC19.31a6a827ff9c59232e72.jpg",
+    "static/media/laxminarayana.jpg": "/NERTU_Demo/static/media/laxminarayana.f721a06dc7e17f253174.jpg",
+    "static/media/revicons.eot": "/NERTU_Demo/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/NERTU_Demo/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/NERTU_Demo/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/NERTU_Demo/index.html",
+    "main.453d5e3d.css.map": "/NERTU_Demo/static/css/main.453d5e3d.css.map",
+    "main.99771472.js.map": "/NERTU_Demo/static/js/main.99771472.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.453d5e3d.css",
+    "static/js/main.99771472.js"
+  ]
+}
