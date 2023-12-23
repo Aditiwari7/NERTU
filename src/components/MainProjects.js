@@ -67,29 +67,29 @@ const MainProjects = () => {
     ]
   return (
     <div className='m-5'>
-        <h1 className='text-start text-danger mx-2 mt-5 px-3'> Main Projects</h1>
+        <h1 className='text-center text-danger mx-5 px-3'> Main Projects</h1>
         
         {/* <Container > */}
           <center>
-          <Table striped bordered hover className='bg-light mt-5 '>
-            <thead>
+          <Table striped bordered hover className='bg-light mt-3 ml-3 mr-3'>
+            <thead style={{ border: 30 }}>
               <tr>
                 <th>S.No</th>
-                <th>Title of the project</th>
+                <th className="p-3">Title of the project</th>
                 <th>Amount ( Rs. in lakhs)</th>
                 <th>Start</th>
                 <th>End</th>
                 <th>Project Code</th>
-                <th>Name of Sponsoring Agency</th>
+                <th style={{width:200}}>Name of Sponsoring Agency</th>
                 <th>Name of the Investigator</th>
                             
               </tr>
             </thead>
             <tbody>
               {data.map((item, index) => (
-                  <tr key={index}>
+                  <tr key={index} className="p-3" style={{ border: 10}}>
                     <td>{item['S.No']}</td>
-                    <td className="text-start">{item.Title_Project}</td>
+                    <td className="text-start" style={{fontWeight:550}}>{item.Title_Project}</td>
                     <td>{item["Amount "] }</td>
                     <td>{item.Start}</td>
                     <td>{item.End}</td>
@@ -101,7 +101,7 @@ const MainProjects = () => {
             </tbody>
           </Table> </center>     
         {/* </Container> */}
-        <button className='bg-info'>See Moree</button>
+        <button className='bg-info nav-links' >See More</button>
     </div>
   )
 }

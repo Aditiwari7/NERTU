@@ -1,38 +1,51 @@
 export const MenuItems = [
   {
-    title: "home",
+    title: "Home",
     url: "/",
-    icon:"fa-solid fa-house",
-    cName:"nav-links"
+    icon: "fa-solid fa-house",
+    cName: "nav-links",
+    color: "white",
   },
   {
-    title: "workshops",
-    url: "/about",
-    icon:"fa-solid fa-circle-info",
-    cName:"nav-links"
+    title: "Gallery",
+    url: "/gallery",
+    icon: "fa-solid fa-image",
+    cName: "nav-links",
+    color: "white",
   },
   {
-    title: "Contacts",
-    url: "/contacts",
-    icon:"fa-solid fa-briefcase",
-    cName:"nav-links"
+    title: "Workshop",
+    url: "/workshop",
+    icon: "fa-solid fa-window-restore",
+    cName: "nav-links",
+    color: "white",
+  },
+  {
+    title: "Project",
+    url: "/project",
+    icon: "fa-solid fa-address-book",
+    cName: "nav-links",
+    color: "white",
+  },
+  {
+    title: "Publication",
+    url: "/publication",
+    icon: "fa-solid fa-file-lines",
+    cName: "nav-links",
+    color: "white",
   },
   {
     title: "Staff",
     url: "/staff",
-    icon:"fa-solid fa-address-book",
-    cName:"nav-links"
+    icon: "fa-solid fa-user",
+    cName: "nav-links",
+    color: "white",
   },
   {
-    title: "projects",
-    url: "/projects",
-    icon:"fa-solid fa-address-book",
-    cName:"nav-links"
-  },
-  {
-    title: "publication",
-    url: "/publications",
-    icon:"fa-solid fa-address-book",
-    cName:"nav-links"
+    title: "Contact Us",
+    url: "/contact",
+    icon: "fa-solid fa-envelope",
+    cName: "nav-links",
+    color: "white",
   },
 ];
