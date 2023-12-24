@@ -1,1 +1,1 @@
-https://aditiwari7.github.io/
+https://aditiwari7.github.io/NERTU_Demo/
