@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NERTU_Demo/static/css/main.453d5e3d.css",
-    "main.js": "/NERTU_Demo/static/js/main.99771472.js",
+    "main.js": "/NERTU_Demo/static/js/main.36f89a10.js",
     "static/media/pic1.jpg": "/NERTU_Demo/static/media/pic1.d6ea6c1f40d5379956e5.jpg",
     "static/media/NERTU_COURSES2.jpg": "/NERTU_Demo/static/media/NERTU_COURSES2.2961673023bd0e1b98dc.jpg",
     "static/media/NERTU_COURSE_Nav17.jpg": "/NERTU_Demo/static/media/NERTU_COURSE_Nav17.fdf281b41210cabfef3d.jpg",
@@ -26,10 +26,10 @@
     "static/media/revicons.woff": "/NERTU_Demo/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/NERTU_Demo/index.html",
     "main.453d5e3d.css.map": "/NERTU_Demo/static/css/main.453d5e3d.css.map",
-    "main.99771472.js.map": "/NERTU_Demo/static/js/main.99771472.js.map"
+    "main.36f89a10.js.map": "/NERTU_Demo/static/js/main.36f89a10.js.map"
   },
   "entrypoints": [
     "static/css/main.453d5e3d.css",
-    "static/js/main.99771472.js"
+    "static/js/main.36f89a10.js"
   ]
 }
