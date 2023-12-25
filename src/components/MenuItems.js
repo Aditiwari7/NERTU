@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: "Home",
-    url: "/",
+    url: "/NERTU_Demo",
     icon: "fa-solid fa-house",
     cName: "nav-links",
     color: "white",

@@ -44,6 +44,7 @@ function Hero(props) {
         <p className="mx-5 px-5 pb-5 d-flex text-start">
           <div>
             <h3 className="font-bold text-danger mt-2">About</h3>
+            <div style={{ textAlign:"justify" }}>
             Osmania University is a collegiate public state university located
             in Hyderabad, Telangana, India. Mir Osman Ali Khan, the 7th Nizam of
             Hyderabad, issued a firman calling for its creation on 29 August
@@ -59,11 +60,12 @@ function Hero(props) {
             Osmania Medical College was once a part of the Osmania University
             System. However, it is now under the supervision of Kaloji Narayana
             Rao University of Health Sciences.
+            </div>
           </div>
           {/* <div style={{padding:20}}>  </div> */}
-          <div style={{ width: 2700, paddingLeft: 55 }}>
+          <div style={{ width: 2700, paddingLeft: 55}}>
             <h3 className="font-bold text-danger mt-2">History</h3>
-            In 1917, Sir Akbar Hydari, in a memorandum to the Education
+            <div style={{ textAlign:"justify" }}>In 1917, Sir Akbar Hydari, in a memorandum to the Education
             Minister, emphasized the need to establish a university in Hyderabad
             with Urdu as the medium of instruction, "as it is the language of
             the widest currency in India". On April 26, 1917, the Nizam of
@@ -79,7 +81,7 @@ function Hero(props) {
             locations and presented his report in 1923. Jasper drew up the
             building plans and the Nizam laid the foundation stone for the
             campus on July 5, 1934. After Jasper left Hyderabad, the state
-            architect Zain Yar Jung supervised the construction of the campus.
+            architect Zain Yar Jung supervised the construction of the campus.</div>
           </div>
         </p>
         <p className="mx-5 px-5 pb-5 d-flex text-start">
@@ -87,7 +89,7 @@ function Hero(props) {
           <div style={{ marginLeft:55}}>
           <h3 className="font-bold mt-2 mb-4 text-danger" >Know About Director</h3>
           <h4 className="font-bold my-2">Prof. P. Laxminarayana</h4>
-          Dr. P. Laxminarayana (PLN) is the Professor and Director of NERTU, OU. He got his M.E. and Ph.D. from the Department of Electronics and Communication Engineering, Osmania University in 1994 and 2000, respectively. He has been working for NERTU, Osmania University, since 1994.  His passion is Technology Development, industry-institute interaction and start-ups.  He is involved in executing several sponsored and Consultancy projects from public and Private Organizations as Principal investigator and co-investigator. He has taken lien from university from July 2003 to June 2005 to establish and lead a 13-member team of "DSP and Audio Processing Technology" group at Hyderabad Development Centre (HDC) of Analog Devices Inc. (ADI). Later, he was also a consultant to ADI and Lantiq Communications India Pvt. Ltd. By recognizing his services at HDC-ADI, ADI funded the Department of ECE to establish a Multimedia and ADSPs laboratory at Osmania University. Three groups of students/alumni members of OU are working in collaboration with him to develop new products and planning for start-ups. He was faculty cum coordinator in organizing more than 20 short-term courses in the areas of Signal Processing, Communication and Navigation. He has published more than 40 Journal and conference papers and technical reports. He has guided more than 40 ME students and 2-PhD Students. His areas of research interest are the development and implementation of Signal and Image Processing algorithms for Communications, Navigation and Object Recognition. At present, he is working on the development of a GNSS software Receiver, Integration of GNSS with other navigation systems, ASR and TTS systems, Face Detection and Recognition, and Instruments for Biotech Industries.
+          <div style={{ textAlign:"justify" }}>Dr. P. Laxminarayana (PLN) is the Professor and Director of NERTU, OU. He got his M.E. and Ph.D. from the Department of Electronics and Communication Engineering, Osmania University in 1994 and 2000, respectively. He has been working for NERTU, Osmania University, since 1994.  His passion is Technology Development, industry-institute interaction and start-ups.  He is involved in executing several sponsored and Consultancy projects from public and Private Organizations as Principal investigator and co-investigator. He has taken lien from university from July 2003 to June 2005 to establish and lead a 13-member team of "DSP and Audio Processing Technology" group at Hyderabad Development Centre (HDC) of Analog Devices Inc. (ADI). Later, he was also a consultant to ADI and Lantiq Communications India Pvt. Ltd. By recognizing his services at HDC-ADI, ADI funded the Department of ECE to establish a Multimedia and ADSPs laboratory at Osmania University. Three groups of students/alumni members of OU are working in collaboration with him to develop new products and planning for start-ups. He was faculty cum coordinator in organizing more than 20 short-term courses in the areas of Signal Processing, Communication and Navigation. He has published more than 40 Journal and conference papers and technical reports. He has guided more than 40 ME students and 2-PhD Students. His areas of research interest are the development and implementation of Signal and Image Processing algorithms for Communications, Navigation and Object Recognition. At present, he is working on the development of a GNSS software Receiver, Integration of GNSS with other navigation systems, ASR and TTS systems, Face Detection and Recognition, and Instruments for Biotech Industries.</div>
           </div>
         </p>
       </div>

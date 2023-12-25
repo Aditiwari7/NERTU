@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -10,58 +10,40 @@ const Projectss = () => {
   const [data, setData] = useState(dataList);
   const [search, setSearch] = useState('');
   const [startFilter, setStartFilter] = useState('All');
-  const [endFilter, setEndFilter] = useState('All');
 
-  const excludeColumns = ["S.No", "Amount"];
+  const excludeColumns = ["S.No", "Amount", "End"]; // Exclude "End" column from filtering
 
-  const handleChange = (value) => {
-    setSearch(value);
-    filterDataSearch(value);
-  }
+  useEffect(() => {
+    const filterData = (value, start) => {
+      const lowercasedValue = value.toLowerCase().trim();
 
-  const filterDataSearch = (value) => {
-    const lowercasedValue = value.toLowerCase().trim();
-
-    if(lowercasedValue === '') setData(dataList);
-
-    else{
       const filteredData = dataList.filter((item) => {
-        return Object.keys(item).some((key) => excludeColumns.includes(key) ? false : item[key].toString().toLowerCase().includes(lowercasedValue)
-        );
-      })
-      setData(filteredData);
-    }
-  };
+        const startMatch = start === 'All' || item['Start'].toString() === start;
 
-  const handleStartFilterChange = (value) => {
-    setStartFilter(value);
-    filterData(search, value, endFilter);
-  }
-
-  const handleEndFilterChange = (value) => {
-    setEndFilter(value);
-    filterData(search, startFilter, value);
-  }
-
-  const filterData = (value, start, end) => {
-    const lowercasedValue = value.toLowerCase().trim();
-
-    if (lowercasedValue === '') setData(dataList);
-    else {
-      const filteredData = dataList.filter((item) => {
         return (
           Object.keys(item).some((key) =>
             excludeColumns.includes(key)
               ? false
               : item[key].toString().toLowerCase().includes(lowercasedValue)
-          ) &&
-          (start === 'All' || start === item['Start']) &&
-          (end === 'All' || end === item['End'])
+          ) && startMatch
         );
-      })
+      });
+
       setData(filteredData);
-    }
+    };
+
+    filterData(search, startFilter);
+  }, [search, startFilter]);
+
+  const handleChange = (value) => {
+    setSearch(value);
   };
+
+  const handleStartFilterChange = (value) => {
+    setStartFilter(value);
+  };
+
+  const startOptions = ["All", ...Array.from(new Set(dataList.map((item) => item.Start.toString())))];
 
   return (
     <div id="projects" className='m-4 pt-2'>
@@ -94,69 +76,19 @@ const Projectss = () => {
                   Start
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item eventKey="All">All</Dropdown.Item>
-                  <Dropdown.Item eventKey="2014">2014</Dropdown.Item>
-                  <Dropdown.Item eventKey="2012">2012</Dropdown.Item>
-                  <Dropdown.Item eventKey="2010">2010</Dropdown.Item>
-                  <Dropdown.Item eventKey="2009">2009</Dropdown.Item>
-                  <Dropdown.Item eventKey="2007">2007</Dropdown.Item>
-                  <Dropdown.Item eventKey="2006">2006</Dropdown.Item>
-                  <Dropdown.Item eventKey="2005">2005</Dropdown.Item>
-                  <Dropdown.Item eventKey="2004">2004</Dropdown.Item>
-                  <Dropdown.Item eventKey="2003">2003</Dropdown.Item>
-                  <Dropdown.Item eventKey="2002">2002</Dropdown.Item>
-                  <Dropdown.Item eventKey="2001">2001</Dropdown.Item>
-                  <Dropdown.Item eventKey="1999">1999</Dropdown.Item>
-                  <Dropdown.Item eventKey="1998">1998</Dropdown.Item>
-                  <Dropdown.Item eventKey="1997">1997</Dropdown.Item>
-                  <Dropdown.Item eventKey="1996">1996</Dropdown.Item>
-                  <Dropdown.Item eventKey="1995">1995</Dropdown.Item>
-                  <Dropdown.Item eventKey="1994">1994</Dropdown.Item>
-                  <Dropdown.Item eventKey="1993">1993</Dropdown.Item>
-                  <Dropdown.Item eventKey="1992">1992</Dropdown.Item>
-                  <Dropdown.Item eventKey="1991">1991</Dropdown.Item>
-                  <Dropdown.Item eventKey="1989">1989</Dropdown.Item>
-                  <Dropdown.Item eventKey="1987">1987</Dropdown.Item>
+                  {startOptions.map((year, index) => (
+                    <Dropdown.Item
+                      key={index}
+                      eventKey={year}
+                      active={startFilter === year}
+                    >
+                      {year}
+                    </Dropdown.Item>
+                  ))}
                 </Dropdown.Menu>
               </Dropdown>
             </th>
-            <th>
-              <Dropdown onSelect={(eventKey) => handleEndFilterChange(eventKey)}>
-                <Dropdown.Toggle variant="light" id="dropdown-end" style={{fontWeight:630}}>
-                  End
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item eventKey="All">All</Dropdown.Item>
-                  <Dropdown.Item eventKey="2015">2015</Dropdown.Item>
-                  <Dropdown.Item eventKey="2014">2014</Dropdown.Item>
-                  <Dropdown.Item eventKey="2012">2012</Dropdown.Item>
-                  <Dropdown.Item eventKey="2010">2010</Dropdown.Item>
-                  <Dropdown.Item eventKey="2009">2009</Dropdown.Item>
-                  <Dropdown.Item eventKey="2008">2008</Dropdown.Item>
-                  <Dropdown.Item eventKey="2007">2007</Dropdown.Item>
-                  <Dropdown.Item eventKey="2006">2006</Dropdown.Item>
-                  <Dropdown.Item eventKey="2005">2005</Dropdown.Item>
-                  <Dropdown.Item eventKey="2004">2004</Dropdown.Item>
-                  <Dropdown.Item eventKey="2003">2003</Dropdown.Item>
-                  <Dropdown.Item eventKey="2002">2002</Dropdown.Item>
-                  <Dropdown.Item eventKey="2001">2001</Dropdown.Item>
-                  <Dropdown.Item eventKey="2000">2000</Dropdown.Item>
-                  <Dropdown.Item eventKey="1999">1999</Dropdown.Item>
-                  <Dropdown.Item eventKey="1998">1998</Dropdown.Item>
-                  <Dropdown.Item eventKey="1997">1997</Dropdown.Item>
-                  <Dropdown.Item eventKey="1996">1996</Dropdown.Item>
-                  <Dropdown.Item eventKey="1995">1995</Dropdown.Item>
-                  <Dropdown.Item eventKey="1994">1994</Dropdown.Item>
-                  <Dropdown.Item eventKey="1993">1993</Dropdown.Item>
-                  <Dropdown.Item eventKey="1992">1992</Dropdown.Item>
-                  <Dropdown.Item eventKey="1991">1991</Dropdown.Item>
-                  <Dropdown.Item eventKey="1990">1990</Dropdown.Item>
-                  <Dropdown.Item eventKey="1989">1989</Dropdown.Item>
-                  <Dropdown.Item eventKey="1987">1987</Dropdown.Item>
-                  
-                </Dropdown.Menu>
-              </Dropdown>
-            </th>
+            <th>End</th>
             <th>Project Code</th>
             <th style={{width:200}}>Sponsoring Agency</th>
             <th>Investigator</th>

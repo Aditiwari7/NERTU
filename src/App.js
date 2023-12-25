@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className="App">
           <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/NERTU_Demo" element={<Home/>}/>
             <Route path="/gallery" element={<Gallery/>}/>
             <Route path="/workshop" element={<Workshop/>}/>
             <Route path="/contact" element={<Contact/>}/>
